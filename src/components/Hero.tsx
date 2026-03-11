@@ -79,17 +79,16 @@ export default function Hero() {
            initial={{ opacity: 0, scale: 0.95 }}
            animate={{ opacity: 1, scale: 1 }}
            transition={{ duration: 0.8, delay: 0.3 }}
-           className="hidden lg:flex flex-col gap-6 w-[400px]"
+           className="flex flex-col gap-6 w-full max-w-[280px] mx-auto lg:mx-0 lg:max-w-[400px]"
         >
           {/* Main Photo Card */}
           <div className="relative aspect-[4/5] rounded-3xl overflow-hidden glass p-2 w-full">
             <div className="w-full h-full rounded-2xl bg-secondary/80 flex items-center justify-center relative overflow-hidden group">
-              <Image 
-                src="/profile.jpg" 
-                alt="Profile Image" 
-                fill 
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                priority
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/profile.jpeg"
+                alt="Md Firoze Mehedi"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-30 mix-blend-overlay"></div>
             </div>
