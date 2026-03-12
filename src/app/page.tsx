@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import EducationProjects from "@/components/EducationProjects";
-import { Mail, Phone, MapPin, Linkedin, Github, ArrowUpRight } from "lucide-react";
+import { Mail, MapPin, Linkedin, Github, ArrowUpRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -35,16 +35,6 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col justify-center space-y-6">
-               <div className="flex items-center gap-4 group">
-                 <div className="p-4 rounded-xl glass text-primary group-hover:scale-110 transition-transform">
-                   <Phone className="w-5 h-5" />
-                 </div>
-                 <div>
-                   <p className="text-sm text-muted-foreground">Call Me At</p>
-                   <p className="text-lg font-medium">(703) 910-0211</p>
-                 </div>
-               </div>
-
                <div className="flex items-center gap-4 group">
                  <div className="p-4 rounded-xl glass text-blue-400 group-hover:scale-110 transition-transform">
                    <MapPin className="w-5 h-5" />
